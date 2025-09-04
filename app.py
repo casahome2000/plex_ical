@@ -195,6 +195,11 @@ def calendar():
     return Response(cal_bytes, headers=headers)
 
 
+@app.route("/calendar.ics")
+def calendar_ics():
+    return calendar()
+
+
 if __name__ == "__main__":
     # Dev run (Dockerfile uses gunicorn in production)
     app.run(host="0.0.0.0", port=int(os.getenv("PORT", "8000")))
