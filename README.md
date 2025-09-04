@@ -24,6 +24,16 @@ Runs as a Docker container (tested on Synology NAS with Portainer, and Docker).
 
 ---
 
+## Quick Start (Docker Run FTW)
+```bash
+docker run -d --name plex_ical  /
+   -p 5181:8000  /
+   -e SONARR_ICAL_URL="http://sonarr-ip:8989/feed/v3/calendar/Sonarr.ics?apikey=YOUR_SONARR_API_KEY"   /
+   -e RADARR_ICAL_URL="http://radarr-ip:7878/feed/v3/calendar/Radarr.ics?apikey=YOUR_RADARR_API_KEY"   /
+   -e CAL_NAME="plex_ical_Entertainment"  /
+    casahome2000/plex_ical:latest
+```
+
 
 ## Setup
 
