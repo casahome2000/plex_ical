@@ -41,8 +41,8 @@ cp .env.sample .env
 
 Example:
 ```env
-SONARR_ICAL_URL=http://192.168.1.10:8989/calendar?apikey=SONARR_KEY
-RADARR_ICAL_URL=http://192.168.1.10:7878/calendar?apikey=RADARR_KEY
+SONARR_ICAL_URL=http://sonarr-ip:8989/feed/v3/calendar/Sonarr.ics?apikey=YOUR_SONARR_API_KEY
+RADARR_ICAL_URL=http://radarr-ip:7878/feed/v3/calendar/Radarr.ics?apikey=YOUR_RADARR_API_KEY
 CAL_NAME=media_Entertainment
 REFRESH_SECONDS=1800
 VERIFY_SSL=true
@@ -71,8 +71,8 @@ services:
     image: casahome2000/plex_ical:latest
     container_name: plex_ical
     environment:
-      SONARR_ICAL_URL: "http://192.168.1.10:8989/calendar?apikey=SONARR_KEY"
-      RADARR_ICAL_URL: "http://192.168.1.10:7878/calendar?apikey=RADARR_KEY"
+      SONARR_ICAL_URL: "http://192.168.1.10:8989/feed/v3/calendar/Sonarr.ics?apikey=YOUR_SONARR_API_KEY"
+      RADARR_ICAL_URL: "http://192.168.1.10:7878/feed/v3/calendar/Radarr.ics?apikey=YOUR_RADARR_API_KEY"
       CAL_NAME: "media_Entertainment"
       REFRESH_SECONDS: "1800"
       VERIFY_SSL: "true"
@@ -96,8 +96,8 @@ services:
     image: plex_ical:latest
     container_name: plex_ical
     environment:
-      SONARR_ICAL_URL: "http://192.168.1.10:8989/calendar?apikey=SONARR_KEY"
-      RADARR_ICAL_URL: "http://192.168.1.10:7878/calendar?apikey=RADARR_KEY"
+      SONARR_ICAL_URL: "http://192.168.1.10:8989/feed/v3/calendar/Sonarr.ics?apikey=YOUR_SONARR_API_KEY"
+      RADARR_ICAL_URL: "http://192.168.1.10:7878/feed/v3/calendar/Radarr.ics?apikey=YOUR_RADARR_API_KEY"
       CAL_NAME: "media_Entertainment"
       REFRESH_SECONDS: "1800"
       VERIFY_SSL: "true"
