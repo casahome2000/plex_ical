@@ -1,0 +1,30 @@
+# Ignore environment and secrets
+.env
+.env.*
+!.env.sample
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore virtual environments
+.venv/
+env/
+venv/
+
+# Ignore version control
+.git
+.gitignore
+
+# Ignore IDE/project files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Ignore macOS cruft
+.DS_Store
+.AppleDouble
+.LSOverride
