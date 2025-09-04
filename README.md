@@ -42,7 +42,7 @@ Example:
 SONARR_ICAL_URL=http://192.168.1.10:8989/calendar?apikey=SONARR_KEY
 RADARR_ICAL_URL=http://192.168.1.10:7878/calendar?apikey=RADARR_KEY
 
-CAL_NAME=casaCoventry_Entertainment
+CAL_NAME=calendar_Entertainment
 REFRESH_SECONDS=1800
 VERIFY_SSL=true
 TZ=America/Chicago
@@ -138,7 +138,7 @@ Open in browser:
 ```env
 SONARR_ICAL_URL=http://sonarr:8989/calendar?apikey=XXXX
 RADARR_ICAL_URL=http://radarr:7878/calendar?apikey=YYYY
-CAL_NAME=casaCoventry_Entertainment
+CAL_NAME=calendar_Entertainment
 REFRESH_SECONDS=1800
 VERIFY_SSL=true
 TZ=America/Chicago
