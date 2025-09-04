@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  ical-merge:
+    build: .
+    container_name: plex_ical
+    env_file:
+      - .env
+    ports:
+      - "5181:8000"
+    restart: unless-stopped
